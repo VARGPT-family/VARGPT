@@ -13,7 +13,7 @@ Yuguo Yin<sup>1</sup>&nbsp;
 
 <sup>1</sup> Peking University
  
-[![ArXiv](https://img.shields.io/badge/ArXiv-VARGPT-<COLOR>.svg)](https://arxiv.org/) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-<COLOR>.svg)](https://huggingface.co/spaces) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-<COLOR>.svg)](https://huggingface.co/spaces/) 
+[![ArXiv](https://img.shields.io/badge/ArXiv-VARGPT-<COLOR>.svg)](https://arxiv.org/) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-<COLOR>.svg)](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-<COLOR>.svg)](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets) 
 </div>
 
 ## News
@@ -99,7 +99,7 @@ from vargpt_llava.prepare_vargpt_llava import prepare_vargpt_llava
 from vargpt_llava.processing_vargpt_llava import VARGPTLlavaProcessor
 from patching_utils.patching import patching
 
-model_id = "VARGPT_LLaVA-v1"
+model_id = "VARGPT-family/VARGPT_LLaVA-v1"
 prepare_vargpt_llava(model_id)
 
 model = VARGPTLlavaForConditionalGeneration.from_pretrained(
@@ -157,7 +157,7 @@ from vargpt_llava.modeling_vargpt_llava import VARGPTLlavaForConditionalGenerati
 from vargpt_llava.prepare_vargpt_llava import prepare_vargpt_llava 
 from vargpt_llava.processing_vargpt_llava import VARGPTLlavaProcessor
 from patching_utils.patching import patching
-model_id = "VARGPT_LLaVA-v1"
+model_id = "VARGPT-family/VARGPT_LLaVA-v1"
 
 prepare_vargpt_llava(model_id)
 
