@@ -18,6 +18,7 @@ Yuguo Yin<sup>1</sup>&nbsp;
 
 ## News
 
+* **[In progress]** We will explore a more powerful model architecture and use more data to support the unified generation and understanding of various modalities including images, videos, and texts in the next version. Stay tuned! 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 * **[2025-01-22]** We release the datasets for training VARGPT (**7B+2B**). 🔥🔥
 
 * **[2025-01-21]** We release the **model and inference code** of VARGPT (**7B+2B**) for multimodal understanding and generation including image captioning, visual question answering (VQA), text-to-image generation. 🔥🔥
