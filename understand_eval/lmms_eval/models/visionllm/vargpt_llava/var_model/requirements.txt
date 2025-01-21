@@ -1,0 +1,12 @@
+torch==2.1.0
+
+Pillow
+huggingface_hub
+pytz
+transformers
+typed-argument-parser
+torchvision
+numpy==1.26.4
+pandas
+tensorboard
+pyarrow
