@@ -13,7 +13,7 @@ Yuguo Yin<sup>1</sup>&nbsp;
 
 <sup>1</sup> Peking University
  
-[![ArXiv](https://img.shields.io/badge/ArXiv-VARGPT-<COLOR>.svg)](https://arxiv.org/) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-<COLOR>.svg)](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-<COLOR>.svg)](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets) 
+[![ArXiv](https://img.shields.io/badge/ArXiv-VARGPT-b31b1b.svg?logo=arXiv)](https://arxiv.org/) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-blue.svg)](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-red.svg)](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets) [![License](https://img.shields.io/badge/License-Apache-yellow)](https://github.com/VARGPT-family/VARGPT/blob/main/LICENSE)
 </div>
 
 ## News
@@ -55,8 +55,8 @@ The visual generation capabilities of VARGPT are currently constrained by the li
 - [X] Release the code for evaluation.
 - [X] Release the model checkpoint.
 - [X] Release the datasets.
-- [] Supporting stronger visual generation capabilities.
-- [] Release the training code.
+- [ ] Supporting stronger visual generation capabilities.
+- [ ] Release the training code.
 
 ## Hugging Face models and annotations
 
