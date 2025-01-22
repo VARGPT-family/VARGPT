@@ -13,7 +13,7 @@ Yuguo Yin<sup>1</sup>&nbsp;
 
 <sup>1</sup> Peking University
  
-[![ArXiv](https://img.shields.io/badge/ArXiv-VARGPT-b31b1b.svg?logo=arXiv)](https://arxiv.org/) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-blue.svg)](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-red.svg)](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets) [![License](https://img.shields.io/badge/License-Apache-yellow)](https://github.com/VARGPT-family/VARGPT/blob/main/LICENSE)
+[![ArXiv](https://img.shields.io/badge/ArXiv-2501.12327-b31b1b.svg?logo=arXiv)](https://arxiv.org/pdf/2501.12327) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-blue.svg)](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-red.svg)](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets) [![License](https://img.shields.io/badge/License-Apache-yellow)](https://github.com/VARGPT-family/VARGPT/blob/main/LICENSE)
 </div>
 
 ## News
@@ -308,9 +308,14 @@ For any issues or further clarification, please refer to the project documentati
 ### Citation
 To cite the paper and model, please use the below:
 ```
-@article{vargpt2025,
-    author={Xianwei Zhuang*, Yuxin Xie*, Yufan Deng*, Liming Liang, Jinghan Ru, Yuguo Yin, Yuexian Zou,}
-    title={VARGPT: Unified Understanding and Generation in a Visual Autoregressive Multimodal Large Language Model}, 
+@misc{zhuang2025vargptunifiedunderstandinggeneration,
+      title={VARGPT: Unified Understanding and Generation in a Visual Autoregressive Multimodal Large Language Model}, 
+      author={Xianwei Zhuang and Yuxin Xie and Yufan Deng and Liming Liang and Jinghan Ru and Yuguo Yin and Yuexian Zou},
+      year={2025},
+      eprint={2501.12327},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.12327}, 
 }
 ```
 ### Acknowledgments
