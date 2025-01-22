@@ -24,12 +24,8 @@ def prepare_vargpt_llava(save_path=vargpt_save_path, prepared_modules=["model", 
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
 
-    existsed = False
-    if check_file_exists(save_path, "config.json"):
-        existsed = True
 
-    if existsed:
-        vargpt_llava_config = VARGPTLlavaConfig.from_pretrained(save_path)
+    vargpt_llava_config = VARGPTLlavaConfig.from_pretrained(save_path)
 
     processor = VARGPTLlavaProcessor.from_pretrained(vargpt_save_path)
     # register into hugginface
