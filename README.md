@@ -255,13 +255,13 @@ The following content provides detailed instructions for preparing the training 
 
 To prepare the image data, download the following datasets:
 
-1. [ImageNet](https://huggingface.co/datasets/ILSVRC/imagenet-1k)
+1. ImageNet: [ImageNet](https://huggingface.co/datasets/ILSVRC/imagenet-1k)
 2. COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip)
 3. GQA: [images](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip)
 4. OCR-VQA: [images](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing)
 5. TextVQA: [train_val_images](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip)
 6. VisualGenome: [part1](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip), [part2](https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip)
-7. [LLaVA-Onevision Dataset](https://huggingface.co/datasets/lmms-lab/LLaVA-OneVision-Data)
+7. LLaVA-Onevision Dataset: [LLaVA-Onevision Dataset](https://huggingface.co/datasets/lmms-lab/LLaVA-OneVision-Data)
 
 #### Matching Instruction Fine-tuning Data Paths with Image Paths
 
