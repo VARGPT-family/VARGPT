@@ -62,8 +62,10 @@ The visual generation capabilities of VARGPT are currently constrained by the li
 ## Hugging Face models and annotations
 
 The VARGPT checkpoints can be found on [Hugging Face](https://huggingface.co):
-* [vargpt-family/VARGPT_LLaVA-v1](https://huggingface.co/)
+* [VARGPT-family/VARGPT_LLaVA-v1](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1)
 
+The instruction for training data can be found on [Hugging Face](https://huggingface.co):
+* [VARGPT-family/VARGPT_datasets](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets)
 
 ## Getting Started
 First, set up the environment:
