@@ -54,7 +54,7 @@ class VARGPTLlavaConfig(PretrainedConfig):
     Example:
 
     ```python
-    >>> from transformers import LlavaForConditionalGeneration, LlavaConfig, CLIPVisionConfig, LlamaConfig
+    >>> from transformers import VARGPTLlavaForConditionalGeneration, VARGPTLlavaConfig, CLIPVisionConfig, LlamaConfig
 
     >>> # Initializing a CLIP-vision config
     >>> vision_config = CLIPVisionConfig()
@@ -62,11 +62,11 @@ class VARGPTLlavaConfig(PretrainedConfig):
     >>> # Initializing a Llama config
     >>> text_config = LlamaConfig()
 
-    >>> # Initializing a Llava llava-1.5-7b style configuration
-    >>> configuration = LlavaConfig(vision_config, text_config)
+    >>> # Initializing a VARGPT VARGPT_LLaVA-v1 style configuration
+    >>> configuration = VARGPTLlavaConfig(vision_config, text_config)
 
-    >>> # Initializing a model from the llava-1.5-7b style configuration
-    >>> model = LlavaForConditionalGeneration(configuration)
+    >>> # Initializing a model from the VARGPT_LLaVA-v1 style configuration
+    >>> model = VARGPTLlavaForConditionalGeneration(configuration)
 
     >>> # Accessing the model configuration
     >>> configuration = model.config

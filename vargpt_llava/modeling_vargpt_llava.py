@@ -48,7 +48,7 @@ logger = logging.get_logger(__name__)
 _CONFIG_FOR_DOC = "VARGPT"
 
 # Base docstring
-_CHECKPOINT_FOR_DOC = "llava-hf/llava-1.5-7b-hf"
+_CHECKPOINT_FOR_DOC = "VARGPT-family/VARGPT_LLaVA-v1"
 
 
 # image generation path
@@ -511,8 +511,8 @@ class VARGPTLlavaForConditionalGeneration(LlavaPreTrainedModel, GenerationMixin)
         >>> import requests
         >>> from transformers import AutoProcessor, LlavaForConditionalGeneration
 
-        >>> model = LlavaForConditionalGeneration.from_pretrained("llava-hf/llava-1.5-7b-hf")
-        >>> processor = AutoProcessor.from_pretrained("llava-hf/llava-1.5-7b-hf")
+        >>> model = VARGPTLlavaForConditionalGeneration.from_pretrained("VARGPT-family/VARGPT_LLaVA-v1")
+        >>> processor = AutoProcessor.from_pretrained("VARGPT-family/VARGPT_LLaVA-v1")
 
         >>> prompt = "USER: <image>\nWhat's the content of the image? ASSISTANT:"
         >>> url = "https://www.ilankelman.org/stopsigns/australia.jpg"
@@ -521,9 +521,9 @@ class VARGPTLlavaForConditionalGeneration(LlavaPreTrainedModel, GenerationMixin)
         >>> inputs = processor(images=image, text=prompt, return_tensors="pt")
 
         >>> # Generate
-        >>> generate_ids = model.generate(**inputs, max_new_tokens=15)
+        >>> generate_ids = model.generate(**inputs, max_new_tokens=512)
         >>> processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
-        "USER:  \nWhat's the content of the image? ASSISTANT: The image features a busy city street with a stop sign prominently displayed"
+        "USER:  \nWhat's the content of the image? ASSISTANT: ..."
         ```"""
 
         x_BLC, attn_bias, cond_BD_or_gss, cond_BD  = None, None, None, None
