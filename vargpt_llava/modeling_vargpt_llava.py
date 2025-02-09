@@ -671,7 +671,8 @@ class VARGPTLlavaForConditionalGeneration(LlavaPreTrainedModel, GenerationMixin)
         if inference_image_gen:
             B = input_ids.shape[0]
             assert B==1, "batch size must be 1 for inference"
-            sos = cond_BD = self.vargpt_gen.class_emb(torch.cat((input_ids[0], torch.full_like(input_ids[0], fill_value=self.config.special_tokens['image_gen_start_token_id'] +1)), dim=0)) # torch.Size([2, 1, 3584])
+            # sos = cond_BD = self.vargpt_gen.class_emb(torch.cat((input_ids[0], torch.full_like(input_ids[0], fill_value=self.config.special_tokens['image_gen_start_token_id'] +1)), dim=0)) # torch.Size([2, 1, 3584])
+            sos = cond_BD = self.vargpt_gen.class_emb(torch.cat((torch.full_like(input_ids[0], fill_value=self.config.special_tokens['image_gen_start_token_id'] +1), torch.full_like(input_ids[0], fill_value=self.config.special_tokens['image_gen_start_token_id'] +1)), dim=0)) # torch.Size([2, 1, 3584])
             lvl_pos = self.vargpt_gen.lvl_embed(self.vargpt_gen.lvl_1L) + self.vargpt_gen.pos_1LC
             next_token_map = sos.unsqueeze(1).expand(2 * B, self.vargpt_gen.first_l, -1) + self.vargpt_gen.pos_start.expand(2 * B, self.vargpt_gen.first_l, -1) + lvl_pos[:, :self.vargpt_gen.first_l]
             cur_L = 0

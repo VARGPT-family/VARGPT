@@ -184,6 +184,33 @@ def vargpt_sample(
 
         if next_tokens.shape[0] == 1:
             if hasattr(self.config, 'special_tokens') and next_tokens[0] == self.config.special_tokens['image_gen_start_token_id']:
+                input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
+                cur_len += 1
+                # prepare model inputs
+                model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
+                # prepare variable output controls (note: some models won't accept all output controls)
+                model_inputs.update({"output_attentions": output_attentions} if output_attentions else {})
+                model_inputs.update({"output_hidden_states": output_hidden_states} if output_hidden_states else {})
+                outputs = self(**model_inputs, return_dict=True, inference_image_gen = False)
+                model_kwargs = self._update_model_kwargs_for_generation(
+                    outputs,
+                    model_kwargs,
+                    is_encoder_decoder=self.config.is_encoder_decoder,
+                )
+                next_token_logits = outputs.logits.clone()[:, -1, :].float()
+                next_token_logits = next_token_logits.to(input_ids.device)
+
+                # pre-process distribution
+                next_token_scores = logits_processor(input_ids, next_token_logits)
+                # token selection
+                if do_sample:
+                    probs = nn.functional.softmax(next_token_scores, dim=-1)
+                    # TODO (joao): this OP throws "skipping cudagraphs due to ['incompatible ops']", find solution
+                    next_tokens = torch.multinomial(probs, num_samples=1).squeeze(1)
+                else:
+                    next_tokens = torch.argmax(next_token_scores, dim=-1)
+
+
                 del outputs
                 input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
                 cur_len += 1
