@@ -18,7 +18,9 @@ Yuguo Yin<sup>1</sup>&nbsp;
 
 ## News
 
-* **[In progress]** We will explore a more powerful model architecture and use more data to support the unified generation and understanding of various modalities including images, videos, and texts in the next version. Stay tuned! 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+* **[2025-04-01]** We release an estimated powerful model and all the training code of **VARGPT** and **VARGPT-v1.1** at https://github.com/VARGPT-family/VARGPT-v1.1. For the convenience of maintenance, we have closed the issue of this repository and will mainly update and maintain it in [VARGPT-v1.1](https://github.com/VARGPT-family/VARGPT-v1.1). 🔥🔥🔥🔥🔥🔥🔥🔥
+  
 * **[2025-01-22]** We release the datasets for training VARGPT (**7B+2B**). 🔥🔥
 
 * **[2025-01-21]** We release the **model and inference code** of VARGPT (**7B+2B**) for multimodal understanding and generation including image captioning, visual question answering (VQA), text-to-image generation. 🔥🔥
@@ -56,8 +58,8 @@ The visual generation capabilities of VARGPT are currently constrained by the li
 - [X] Release the code for evaluation.
 - [X] Release the model checkpoint.
 - [X] Release the datasets.
-- [ ] Supporting stronger visual generation capabilities.
-- [ ] Release the training code.
+- [X] Supporting stronger visual generation capabilities.
+- [X] Release the training code at [VARGPT-v1.1](https://github.com/VARGPT-family/VARGPT-v1.1)
 
 ## Hugging Face models and annotations
 
