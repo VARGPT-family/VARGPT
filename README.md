@@ -14,6 +14,7 @@ Yuguo Yin<sup>1</sup>&nbsp;
 <sup>1</sup> Peking University
  
 [![ArXiv](https://img.shields.io/badge/ArXiv-2501.12327-b31b1b.svg?logo=arXiv)](https://arxiv.org/pdf/2501.12327) [![Webpage](https://img.shields.io/badge/Webpage-VARGPT-<COLOR>.svg)](https://vargpt-1.github.io/) [![Model](https://img.shields.io/badge/Model-HuggingFace-blue.svg)](https://huggingface.co/VARGPT-family/VARGPT_LLaVA-v1) [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-red.svg)](https://huggingface.co/datasets/VARGPT-family/VARGPT_datasets) [![License](https://img.shields.io/badge/License-Apache-yellow)](https://github.com/VARGPT-family/VARGPT/blob/main/LICENSE)
+[![WeChat badge](https://img.shields.io/badge/-WeChat@新智元-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/mXFn-9QwU9pO1HWaz8uV0A)
 </div>
 
 ## News
