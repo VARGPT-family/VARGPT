@@ -19,8 +19,9 @@ Yuguo Yin<sup>1</sup>&nbsp;
 
 ## News
 
-
-* **[2025-04-01]** We release a more powerful model **VARGPT-v1.1** and all the training code of **VARGPT** and **VARGPT-v1.1** at https://github.com/VARGPT-family/VARGPT-v1.1. For the convenience of maintenance, we have closed the issue of this repository and will mainly update and maintain it in [VARGPT-v1.1](https://github.com/VARGPT-family/VARGPT-v1.1). 🔥🔥🔥🔥🔥🔥🔥🔥
+* **[2025-04-07]** The technical report for VARGPT-v1.1 is released at https://arxiv.org/pdf/2504.02949.
+ 
+* **[2025-04-01]** We release a more powerful model **VARGPT-v1.1** and all the training code of **VARGPT** and **VARGPT-v1.1** at https://github.com/VARGPT-family/VARGPT-v1.1. For the convenience of maintenance, we have closed the issue of this repository and will mainly update and maintain it in [VARGPT-v1.1](https://github.com/VARGPT-family/VARGPT-v1.1) and [VARGPT-v1.1 issues](https://github.com/VARGPT-family/VARGPT-v1.1/issues). 🔥🔥🔥🔥🔥🔥🔥🔥
   
 * **[2025-01-22]** We release the datasets for training VARGPT (**7B+2B**). 🔥🔥
 
