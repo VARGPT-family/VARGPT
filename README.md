@@ -325,4 +325,4 @@ To cite the paper and model, please use the below:
 }
 ```
 ### Acknowledgments
-This work is heavily based on [LLaVA-1.5](https://github.com/haotian-liu/LLaVA), [VAR](https://github.com/FoundationVision/VAR), [LLaVA-NeXT](https://llava-vl.github.io/blog/2024-01-30-llava-next), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Show-o](https://github.com/showlab/Show-o), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [CLIP](https://github.com/openai/CLIP), [transformers-hf](https://github.com/huggingface/transformers). Thanks to all the authors for their great work.
+This work is heavily based on [LLaVA-1.5](https://github.com/haotian-liu/LLaVA), [VAR](https://github.com/FoundationVision/VAR), [LLaVA-NeXT](https://llava-vl.github.io/blog/2024-01-30-llava-next), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Show-o](https://github.com/showlab/Show-o), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [CLIP](https://github.com/openai/CLIP), [transformers-hf](https://github.com/huggingface/transformers). Thanks to all the authors for their great work. 
